@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bíblias da Neide · Restauradas, vestidas de pérolas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f2f6; --surface:#ffffff; --ink:#26192f; --muted:#6a5c72; --line:#e0d5e3;
+  --plum:#3a2150; --plum-ink:#f6eef6; --gold:#a8814a; --gold-soft:#d8b983; --wa:#1f7a4d; --glow:rgba(190,160,220,.35);
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#160f1d; --surface:#211729; --ink:#f1ebf4; --muted:#b3a6ba; --line:#33263d; --plum:#2b1a3a; --plum-ink:#f6eef6; --gold:#d5b374; --gold-soft:#d8b983; --wa:#3fb97a; --glow:rgba(120,80,170,.35);}
+}
+:root[data-theme="dark"]{--bg:#160f1d; --surface:#211729; --ink:#f1ebf4; --muted:#b3a6ba; --line:#33263d; --plum:#2b1a3a; --plum-ink:#f6eef6; --gold:#d5b374; --gold-soft:#d8b983; --wa:#3fb97a; --glow:rgba(120,80,170,.35);}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Jost",system-ui,sans-serif;font-size:17px;line-height:1.6}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;margin:0;font-weight:600;line-height:1.02}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-weight:600;font-size:1.6rem}
+.btn{display:inline-block;text-decoration:none;font:inherit;font-weight:500;padding:14px 26px;border-radius:999px;border:1.5px solid transparent;cursor:pointer}
+.btn-plum{background:var(--plum);color:var(--plum-ink)}
+.btn-line{border-color:var(--ink);background:transparent;color:var(--ink)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-gold{background:var(--gold-soft);color:#2a1a10}
+.btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:36px 0 72px}
+h1{font-size:clamp(2.8rem,7.4vw,5.2rem);letter-spacing:-.01em}
+h1 em{font-weight:500}
+.hero p{color:var(--muted);font-size:1.08rem;max-width:44ch;margin:20px 0 0}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.stage{position:relative;display:flex;justify-content:center;padding:28px 0}
+.stage::before{content:"";position:absolute;inset:0;background:radial-gradient(closest-side,var(--glow),transparent);}
+.book{position:relative;width:min(290px,72vw);aspect-ratio:3/4.1;transform:rotate(-5deg);animation:settle 1.1s cubic-bezier(.2,.7,.2,1) both}
+@keyframes settle{from{transform:rotate(-14deg) translateY(24px);opacity:0}to{transform:rotate(-5deg);opacity:1}}
+.edge{position:absolute;inset:8px -16px -12px 10px;border-radius:4px 10px 10px 4px;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.5) 0 1px,transparent 1px 3px),
+  linear-gradient(180deg,#f0b9c9 0%,#d3b0ec 28%,#a8c8ee 55%,#a9e0cf 78%,#f4dba0 100%)}
+.cover{position:absolute;inset:0;border-radius:6px 14px 14px 6px;background:linear-gradient(135deg,#4b2c66,#2f1a44);
+  box-shadow:0 30px 44px -20px rgba(20,8,32,.7),inset 9px 0 0 rgba(0,0,0,.3),inset 11px 0 0 rgba(255,255,255,.07)}
+.ring{position:absolute;inset:18px 18px 18px 28px;border-radius:5px;
+  background:radial-gradient(circle at 35% 30%,#fff 0 14%,#f4ecf3 38%,#cbbad2 74%,transparent 77%) 0 0/17px 17px}
+.inner{position:absolute;inset:36px 36px 36px 46px;border-radius:3px;background:linear-gradient(135deg,#4b2c66,#2f1a44);border:1.5px solid var(--gold-soft);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}
+.medal{width:96px;height:96px;border-radius:50%;background:radial-gradient(circle at 34% 28%,#fff 0 16%,#f4ecf3 42%,#c9b7d1 78%);display:grid;place-items:center;
+  box-shadow:0 6px 14px rgba(0,0,0,.35);color:#6a4a2a;font-size:2.4rem;line-height:1}
+.inner .t{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.5rem;color:var(--gold-soft)}
+
+/* destaques */
+section{padding:60px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(2.1rem,5vw,3.2rem)}
+.lead{color:var(--muted);max-width:52ch;margin:12px 0 0}
+.feat{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;column-gap:56px}
+.feat div{padding:22px 0;border-top:1px solid var(--line)}
+.feat h3{font-size:1.7rem;font-style:italic;font-weight:500}
+.feat p{margin:6px 0 0;color:var(--muted);max-width:40ch}
+
+/* catálogo */
+.catalog{position:relative;overflow:hidden;background:var(--plum);color:var(--plum-ink);border-radius:22px;padding:52px 36px 40px}
+.catalog::before{content:"";position:absolute;left:0;right:0;top:0;height:22px;
+  background:radial-gradient(circle at 35% 30%,#fff 0 14%,#f4ecf3 38%,#cbbad2 74%,transparent 77%) 0 3px/20px 20px repeat-x}
+.catalog h2{font-size:clamp(2.2rem,5.4vw,3.6rem)}
+.catalog p{margin:12px 0 26px;opacity:.85;max-width:46ch}
+
+/* passos */
+.steps{list-style:none;margin:30px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s}
+.steps li{counter-increment:s;padding:6px 26px 6px 0}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;margin-bottom:12px;
+  font-family:"Cormorant Garamond",Georgia,serif;font-size:1.5rem;font-weight:700;color:#3a2150;
+  background:radial-gradient(circle at 34% 28%,#fff 0 16%,#f4ecf3 42%,#cbbad2 90%)}
+.steps b{display:block;font-weight:500;font-size:1.1rem}
+.steps span{color:var(--muted)}
+
+/* contato */
+.contact{display:flex;flex-wrap:wrap;gap:18px 28px;align-items:center;margin-top:24px}
+.num{font-family:"Cormorant Garamond",Georgia,serif;font-size:2.6rem;font-weight:600;font-style:italic}
+footer{padding:28px 0 90px;color:var(--muted);font-size:.92rem;border-top:1px solid var(--line)}
+.float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:5;box-shadow:0 10px 24px rgba(0,0,0,.3)}
+
+@media (max-width:780px){
+  .hero{grid-template-columns:1fr;gap:12px;padding-top:12px}
+  .stage{order:-1}
+  .feat{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr;gap:18px}
+  .catalog{padding:48px 24px 32px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Bíblias da Neide</div>
+    <a class="btn btn-line" href="#contato">Contato</a>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>Para guardar a Palavra <em>e passar adiante.</em></h1>
+      <p>Bíblias restauradas por inteiro, vestidas de pérolas ou de outras capas, com detalhes que encantam até de longe. Um presente feito para ficar na família.</p>
+      <div class="actions">
+        <a class="btn btn-plum" href="https://wa.me/c/558386611075" target="_blank" rel="noopener">Ver catálogo</a>
+        <a class="btn btn-line" href="https://wa.me/558386611075?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20uma%20B%C3%ADblia." target="_blank" rel="noopener">Falar com a Neide</a>
+      </div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="book">
+        <div class="edge"></div>
+        <div class="cover">
+          <div class="ring"></div>
+          <div class="inner"><div class="medal">✝</div><div class="t">Bíblia Sagrada</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <h2>Feita com cuidado, do começo ao fim.</h2>
+    <div class="feat">
+      <div><h3>Restauradas por inteiro</h3><p>Cada exemplar é revisado e renovado para atravessar os anos.</p></div>
+      <div><h3>Capas de pérolas</h3><p>Ou outras capas, sempre escolhidas para dar brilho ao momento.</p></div>
+      <div><h3>Beleza que aparece fechada</h3><p>As laterais chamam o olhar antes mesmo de a Bíblia ser aberta.</p></div>
+      <div><h3>Presente com significado</h3><p>Batismo, casamento, formatura ou um agradecimento especial.</p></div>
+    </div>
+  </section>
+
+  <section id="catalogo">
+    <div class="catalog">
+      <h2>Escolha a sua no catálogo.</h2>
+      <p>Todos os modelos disponíveis ficam no WhatsApp da Neide, sempre atualizados.</p>
+      <a class="btn btn-gold" href="https://wa.me/c/558386611075" target="_blank" rel="noopener">Abrir catálogo</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pedir é simples.</h2>
+    <ol class="steps">
+      <li><b>Escolha no catálogo</b><span>Veja os modelos e separe seu favorito.</span></li>
+      <li><b>Chame a Neide</b><span>Tire dúvidas e combine os detalhes.</span></li>
+      <li><b>Combine a entrega</b><span>Pagamento e envio direto pela conversa.</span></li>
+    </ol>
+  </section>
+
+  <section id="contato">
+    <h2>Vamos conversar?</h2>
+    <p class="lead">Fale direto com a Neide para tirar dúvidas, pedir orçamento ou encomendar um presente.</p>
+    <div class="contact">
+      <div class="num">(83) 8661-1075</div>
+      <a class="btn btn-wa" href="https://wa.me/558386611075" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>Bíblias da Neide · WhatsApp (83) 8661-1075</footer>
+</div>
+<a class="btn btn-wa float" href="https://wa.me/558386611075?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20uma%20B%C3%ADblia." target="_blank" rel="noopener">WhatsApp</a>
+</body>
+</html>
